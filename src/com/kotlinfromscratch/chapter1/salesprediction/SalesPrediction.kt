@@ -1,7 +1,10 @@
 package com.kotlinfromscratch.chapter1.salesprediction
 
-private const val ANNUAL_PROFIT_PERCENT = 23
+private const val PROFIT_PERCENT = 23
 
+/**
+ * Calculates the profit from total sales entered by the user
+ */
 fun main() {
 
     print("Enter Total Sales: ")
@@ -12,7 +15,7 @@ fun main() {
         return
     }
 
-    val profit = totalSales * ANNUAL_PROFIT_PERCENT / 100
+    val profit = totalSales * PROFIT_PERCENT / 100
 
     println("Profit: ${"%.2f".format(profit)}")
 }
