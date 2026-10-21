@@ -1,5 +1,7 @@
 # Distance Traveled
 
+**Source:** Programming Logic and Design, Mr. Amer El-Hashemite, lecture notes, Year 1 Semester 1, Chapter 1, Exercise 5
+
 ## Problem
 A car travels at a constant 60 miles per hour. Display how far it
 travels in 5, 8 and 12 hours.
