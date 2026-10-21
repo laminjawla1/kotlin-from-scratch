@@ -29,5 +29,5 @@ fun main() {
 
     println("After Swap:")
     println("FIRST NUMBER: %.4f".format(firstNumber))
-    println("FIRST SECOND: %.4f".format(secondNumber))
+    println("SECOND NUMBER: %.4f".format(secondNumber))
 }
