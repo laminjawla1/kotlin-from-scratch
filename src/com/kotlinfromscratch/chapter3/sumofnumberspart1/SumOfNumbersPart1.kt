@@ -1,8 +1,7 @@
 package com.kotlinfromscratch.chapter3.sumofnumberspart1
 
 /**
- * Asks the user to enter a number.
- * If the number negative the program stops reading numbers otherwise it accumulates a sum
+ * Repeatedly asks for whole numbers and adds them up until a negative number is entered, then prints the sum.
  */
 fun main() {
     var sum = 0
