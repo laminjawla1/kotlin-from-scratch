@@ -8,9 +8,9 @@ fun main() {
 
     while (true) {
         print("Enter a number (type 'q' to stop): ")
-        val input = readln()
+        val input = readln().trim().lowercase()
 
-        if (input.lowercase() == "q") break
+        if (input == "q") break
 
         val number = input.toIntOrNull()
         if (number == null) {
