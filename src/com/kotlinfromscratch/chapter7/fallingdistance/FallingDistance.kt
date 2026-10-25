@@ -12,4 +12,4 @@ fun main() {
     }
 }
 
-private fun fallingDistance(time: Double): Double = (1.0 / 2.0) * g * time * time
+private fun fallingDistance(time: Double): Double = 0.5 * g * time * time
