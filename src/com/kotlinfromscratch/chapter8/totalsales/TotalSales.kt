@@ -15,7 +15,7 @@ fun main() {
         print("Enter Total ${DayOfWeek.of(i)} Sales: ")
         val sales = readln().trim().toDoubleOrNull()
 
-        if (sales == null || sales < 0) {
+        if (sales == null || sales !in 0.0..Double.MAX_VALUE) {
             println("ERROR: Invalid input. Please enter a valid sales amount.")
             continue
         }
