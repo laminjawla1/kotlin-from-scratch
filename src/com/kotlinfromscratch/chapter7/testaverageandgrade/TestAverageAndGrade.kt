@@ -24,18 +24,15 @@ fun main() {
     }
 
     for (score in scores) println("SCORE: $score | GRADE: ${determineGrade(score)}")
-    println("AVERAGE: GRADE: %.1f".format(calcAverage(scores)))
+    println("AVERAGE GRADE: %.1f".format(calcAverage(scores)))
 }
 
-fun calcAverage(scores: List<Double>): Double = scores.average()
+private fun calcAverage(scores: List<Double>): Double = scores.average()
 
-fun determineGrade(score: Double): String {
-    return when {
-        score in 90.0..100.0 -> "A"
-        score in 80.0..89.0 -> "B"
-        score in 70.0..79.0 -> "C"
-        score in 60.0..69.0 -> "D"
-        score < 60.0 -> "F"
-        else -> "Invalid grade"
-    }
+private fun determineGrade(score: Double): String = when {
+    score >= 90 -> "A"
+    score >= 80 -> "B"
+    score >= 70 -> "C"
+    score >= 60 -> "D"
+    else -> "F"
 }
